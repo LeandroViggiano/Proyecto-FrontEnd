@@ -1,0 +1,79 @@
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  
+  body {
+    background: -webkit-gradient(linear, left top, right top, from(rgb(155, 152, 152)), to(white));
+    background: -webkit-linear-gradient(left, rgb(155, 152, 152), white);
+    background: -o-linear-gradient(left, rgb(155, 152, 152), white);
+    background: linear-gradient(to right, rgb(155, 152, 152), white); }
+  
+  .title {
+    text-align: center;
+    color: #444; }
+  
+  .calendar {
+    background: #829694;
+    width: 80%;
+    max-width: 600px;
+    margin: 1em auto;
+    padding: .5em 0; }
+
+    .calendar__info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;    /*Se muestra todo horizontal*/
+      -webkit-box-align: center;    /*Alineados en el centro*/
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 0 2em; /*padding de 0 entre arriba y abajo y 2em a los lados*/
+      font-size: 1.2em; /*Tamaño de la letra*/
+      text-transform: uppercase; } /*Todo se muestra en mayúsculas*/
+ 
+      .calendar__prev, .calendar__next {
+      color: #C7F464;
+      cursor: pointer; /*Transforma el cursor en una mano cuando pasa el cursor*/
+      font-size: 1.3em; } /*Tamaño de la flecha*/
+
+      .calendar__prev {
+      margin-right: auto; } /*Usa todo el espacio disponible de la derecha y el texto se pegaria a la derecha*/
+    
+      .calendar__next {
+      margin-left: auto; } /*Usa todo el espacio disponible de la izquierda y el texto se pegaria a la izquierda*/
+    
+      .calendar__week, .calendar__dates {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr); /*Divide en 7 columnas de una 1 fracción cada una (fracción= (espacio disponible/7)*/
+      grid-gap: 10px; } /*Seprar las columnas entre sí*/
+    
+      .calendar__month, .calendar__year {
+      padding: .5em 1em; }
+    
+      .calendar__item { /*días y numeros*/
+      text-align: center;
+      line-height: 2; }
+
+      .calendar__last-days {
+      opacity: .3; }
+/*
+      .tp_list{
+
+      }
+
+      .exam_list{
+
+      }*/
+        #proximo{
+            display: flex;/*Hago dos columnas*/                              
+
+            justify-content: space-evenly;/*Deja una separación igual entre elementos y bordes del contenedor*/  
+            text-align: center; 
+        }
+        ol{
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+        }
+        li{
+            max-width: 100%;
+        }

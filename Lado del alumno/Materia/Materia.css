@@ -1,0 +1,16 @@
+header{
+    text-align: center;
+
+}
+body{
+background: linear-gradient(to right, rgb(155, 152, 152), white); }
+p{
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+h3{
+    color: black;
+}
+html {
+    scroll-behavior: smooth;
+  }
